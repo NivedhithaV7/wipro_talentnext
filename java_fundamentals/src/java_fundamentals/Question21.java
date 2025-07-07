@@ -2,14 +2,20 @@ package java_fundamentals;
 
 import java.util.Scanner;
 
-public class Question1 {
+public class Question20 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		String s1 = sc.nextLine();
-		String s2 = sc.nextLine();
-		System.out.println(s1+" Technologies "+s2);
+		int n = sc.nextInt();
+		int rev = 0;
+		while(n > 0) {
+			int ld = n%10;
+			rev = rev*10+ld;
+			n = n/10;
+			
+		}
+		System.out.println(rev);
 
 	}
 
